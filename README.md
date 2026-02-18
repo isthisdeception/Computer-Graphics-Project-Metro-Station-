@@ -66,19 +66,4 @@ glu32
 freeglut
 ```
 
----
-
-## 📂 Project Structure
-
-```
-Metro-Rail-Simulation/
-│
-├── metro_simulation.cpp
-├── README.md
-└── demo/
-    └── final_demo.mp4
-```
-
----
-
 Final Year Computer Graphics Project.
