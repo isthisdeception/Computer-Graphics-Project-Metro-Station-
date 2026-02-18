@@ -1,166 +1,64 @@
-# 🚆 Metro Rail Simulation (C++ & OpenGL GLUT)
+# 🚆 Metro Rail Simulation (C++ & OpenGL)
 
-A complete, real-time Metro Rail Simulation developed using **C++ and OpenGL (GLUT)**.
-
-This project was built as a **Final Year Computer Graphics Project** and demonstrates classic raster graphics algorithms, 2D transformations, animation using timers, and a fully implemented state machine for realistic metro behavior.
+A complete Metro Rail Simulation built using **C++ and OpenGL (GLUT)** as a Final Year Computer Graphics project.
 
 ---
 
-# 📌 Project Features
+## 🎬 Demo Video
 
-- 🚄 Metro train with multiple coaches  
-- 🚉 Metro station platform  
-- 🏙️ Multiple background buildings  
-- ☀️ Sun / 🌙 Moon (Day/Night mode)  
-- ☁️ Moving clouds  
-- 🚦 Working signal system (Red / Green)  
-- 👥 Animated passengers  
-- 🔁 Infinite simulation loop  
-- 🎮 Keyboard controls  
+[![Watch Demo](https://img.youtube.com/vi/c_wTthlAKxc/maxresdefault.jpg)](https://youtu.be/c_wTthlAKxc)
+
+▶ Click the image above to watch the full demo on YouTube.
 
 ---
 
-# 🧠 Algorithms Implemented
+## ✨ Features
 
-This project strictly implements the following Computer Graphics algorithms manually (not using built-in OpenGL primitives):
-
-### 1️⃣ DDA Line Algorithm
-Used for:
-- Station text rendering
-- Wheel spokes
-- Some outlines
-
-### 2️⃣ Bresenham Line Algorithm
-Used for:
-- Railway tracks
-- Platform edges
-- Building borders
-- Object outlines
-
-### 3️⃣ Midpoint Circle Algorithm
-Used for:
-- Train wheels
-- Signal lights
-- Sun / Moon
-- Passenger heads
+- Metro train with multiple coaches  
+- Station platform and railway track  
+- Background buildings  
+- Moving clouds  
+- Sun / Moon (Day & Night mode)  
+- Working signal light (Red/Green)  
+- Animated passengers  
+- Infinite train cycle using a proper state machine  
 
 ---
 
-# 🔄 Transformations Used
+## 🧠 Algorithms Used
 
-### ✅ Translation
-- Train movement
-- Passenger walking
-- Cloud animation
-
-### ✅ Rotation
-- Wheel rotation
-- Passenger leg animation
-
-### ✅ Scaling
-- Buildings
-- Clouds
-- Passengers
-- Scene objects
+- DDA Line Algorithm  
+- Bresenham Line Algorithm  
+- Midpoint Circle Algorithm  
 
 ---
 
-# 🚦 Train State Machine (Core Logic)
+## 🔄 Transformations Used
 
-The metro follows a complete finite state machine:
-
-1. Train starts moving
-2. Train arrives at station
-3. Train stops
-4. Signal turns RED
-5. Train doors open
-6. Passengers walk toward door
-7. Passengers disappear after boarding
-8. Train doors close
-9. Signal turns GREEN
-10. Train starts moving again
-11. Process repeats infinitely
-
-This ensures structured and realistic train behavior.
+- Translation (train, passengers, clouds)  
+- Rotation (wheel movement)  
+- Scaling (scene objects)  
 
 ---
 
-# 👥 Passenger System
-
-- Minimum 2 passengers
-- Realistic walking animation
-- Leg movement simulation
-- Passengers disappear after entering train
-- New passengers spawn every cycle
-
----
-
-# 🎮 Controls
+## 🎮 Controls
 
 | Key | Action |
 |------|--------|
-| **D** | Switch to Day Mode |
-| **N** | Switch to Night Mode |
-| **ESC** | Exit Program |
+| **D** | Day Mode |
+| **N** | Night Mode |
+| **ESC** | Exit |
 
 ---
 
-# 🖥️ Screenshots
+## 🛠️ Build Requirements
 
-> Add your screenshots inside an `images/` folder.
+- C++
+- OpenGL
+- GLUT / FreeGLUT
+- CodeBlocks (recommended)
 
-Example:
-
-```markdown
-![Day Mode](images/day_mode.png)
-![Night Mode](images/night_mode.png)
-```
-
----
-
-# ⚙️ Technical Specifications
-
-- Language: **C++**
-- Graphics Library: **OpenGL (GLUT / FreeGLUT)**
-- Animation Method: `glutTimerFunc()`
-- Rendering Mode: 2D Orthographic Projection
-- Structure: Single-file implementation
-- Compatible with: **CodeBlocks + GLUT**
-
----
-
-# 📂 Project Structure
-
-```
-Metro-Rail-Simulation/
-│
-├── metro_simulation.cpp
-├── README.md
-└── images/
-    ├── day_mode.png
-    └── night_mode.png
-```
-
----
-
-# 🛠️ How to Compile & Run (CodeBlocks)
-
-## Step 1: Setup OpenGL + GLUT
-
-Make sure you have:
-- OpenGL installed
-- FreeGLUT or GLUT properly configured
-- Required DLL files in system or project folder
-
-## Step 2: Link Libraries
-
-Go to:
-
-```
-Project → Build Options → Linker Settings
-```
-
-Add:
+Link libraries:
 
 ```
 opengl32
@@ -168,81 +66,19 @@ glu32
 freeglut
 ```
 
-(or `glut32` depending on your configuration)
-
-## Step 3: Build & Run
-
-Click **Build and Run**
-
 ---
 
-# 📸 How to Add Screenshots to GitHub
-
-### Step 1
-Create a folder named:
+## 📂 Project Structure
 
 ```
-images
+Metro-Rail-Simulation/
+│
+├── metro_simulation.cpp
+├── README.md
+└── demo/
+    └── final_demo.mp4
 ```
 
-### Step 2
-Upload screenshots inside that folder:
-- `day_mode.png`
-- `night_mode.png`
-
-### Step 3
-Add this inside README:
-
-```markdown
-![Day Mode](images/day_mode.png)
-![Night Mode](images/night_mode.png)
-```
-
-GitHub will automatically display the images.
-
 ---
 
-# 🎓 Academic Value
-
-This project demonstrates:
-
-- Classic raster graphics algorithms
-- State machine modeling
-- Real-time animation
-- 2D transformations
-- Scene composition
-- Event-driven programming
-- Structured graphics pipeline
-
-Suitable for:
-- Final Year Computer Graphics Course
-- OpenGL Laboratory Projects
-- Graphics Algorithm Demonstration
-
----
-
-# 🚀 Possible Future Improvements
-
-- Sound effects
-- More passengers
-- Camera zoom feature
-- Train speed control
-- 3D version using modern OpenGL
-- Texture mapping
-
----
-
-# 📜 License
-
-This project is developed for educational and academic purposes.
-
----
-
-# 👨‍💻 Author
-
-Final Year Computer Graphics Project  
-Developed using C++ and OpenGL GLUT
-
----
-
-⭐ If you found this project useful, feel free to star the repository!
+Final Year Computer Graphics Project.
