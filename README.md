@@ -1,6 +1,6 @@
 # 🚆 Metro Rail Simulation (C++ & OpenGL)
 
-A complete Metro Rail Simulation built using **C++ and OpenGL (GLUT)** as a Final Year Computer Graphics project.
+A complete Metro Rail Simulation built using **C++ and OpenGL (GLUT)** as a Computer Graphics project.
 
 ---
 
@@ -66,4 +66,3 @@ glu32
 freeglut
 ```
 
-Final Year Computer Graphics Project.
